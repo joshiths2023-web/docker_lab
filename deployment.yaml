@@ -13,10 +13,10 @@ spec:
         app: techvit
     spec:
       containers:
-      - name: conference-app
-        image: docker/html-demo:latest # Must match DOCKER_IMAGE in pipeline
-        ports:
-        - containerPort: 80
+            - name: conference-app
+              image: joshith.s2023/html-demo:latest # Match this to your Jenkins environment variable
+              ports:
+              - containerPort: 80
 ---
 apiVersion: v1
 kind: Service
